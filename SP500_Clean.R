@@ -1,5 +1,5 @@
 library(readxl)
-X_GSPC <- read_excel("C:/Users/Shreya/Downloads/^GSPC.xls")
+X_GSPC <- read_excel("~/Downloads/^GSPC.xls")
 View(X_GSPC)
 
 orig <- X_GSPC
@@ -109,6 +109,6 @@ prob = prob3/totalprob2
 years = strtoi(Clean$Year[nrow(Clean)]) - strtoi(Clean$Year[1]) + 1
 
 library(xlsx)
-write.xlsx(Clean, "C:\\Users\\Shreya\\Downloads\\SPData.xlsx")
+write.xlsx(Clean, "~\\Downloads\\SPData.xlsx")
 
 
